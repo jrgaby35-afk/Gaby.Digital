@@ -189,6 +189,13 @@ body {
   font-weight: 800;
   letter-spacing: -.5px;
 }
+.logo-img {
+  height: 22px;
+  width: 22px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
 .logo-gaby   { color: var(--white); }
 .logo-digital { color: var(--blue); }
 
