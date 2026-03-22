@@ -192,8 +192,8 @@ body {
   align-items: center;
 }
 .logo-img {
-  height: 22px;
-  width: 22px;
+  height: 30px;
+  width: 30px;
   object-fit: contain;
   flex-shrink: 0;
   margin-right: 8px;
