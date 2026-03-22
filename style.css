@@ -310,6 +310,32 @@ body {
   z-index: 1;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero__content {
+  min-width: 0;
+}
+
+.hero__logo-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__logo-display img {
+  width: 380px;
+  height: 380px;
+  object-fit: contain;
+  opacity: .92;
+  filter: drop-shadow(0 0 60px rgba(246,130,32,.25));
+  animation: heroLogoFloat 6s ease-in-out infinite;
+}
+@keyframes heroLogoFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
 }
 
 .hero__badge {
@@ -1367,6 +1393,8 @@ body {
   .hero__headline { font-size: clamp(2rem, 7vw, 3rem); }
   .hero__stats { gap: 28px; }
   .hero__scroll-hint { display: none; }
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__logo-display { display: none; }
 
   .services__grid { grid-template-columns: 1fr; }
 
