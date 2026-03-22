@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaby Digital — Web Development Studio</title>
+  <meta name="description" content="Gaby Digital builds stunning, high-performance websites and web applications for businesses ready to grow online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">
+        <span class="logo-gaby">Gaby</span><span class="logo-digital">Digital</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn--nav">Start a Project</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="container hero__inner">
+      <div class="hero__badge">Web Development Studio</div>
+      <h1 class="hero__headline">
+        We build
+        <span class="hero__flip-wrapper">
+          <span class="hero__flip" id="heroFlip">websites</span>
+        </span>
+        <br />that work for your business.
+      </h1>
+      <p class="hero__sub">From sleek landing pages to full-scale web applications — Gaby Digital delivers modern, fast, and conversion-focused digital experiences.</p>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary">Start a Project</a>
+        <a href="#services" class="btn btn--ghost">Our Services</a>
+      </div>
+      <div class="hero__trust">
+        <span class="trust-item">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Free quotes
+        </span>
+        <span class="trust-sep">·</span>
+        <span class="trust-item">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Fast turnaround
+        </span>
+        <span class="trust-sep">·</span>
+        <span class="trust-item">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Clients worldwide
+        </span>
+        <span class="trust-sep">·</span>
+        <span class="trust-item">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          You own everything
+        </span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Web Design</span><span class="dot">•</span>
+      <span>Web Development</span><span class="dot">•</span>
+      <span>E-Commerce</span><span class="dot">•</span>
+      <span>SEO Optimization</span><span class="dot">•</span>
+      <span>UI/UX Design</span><span class="dot">•</span>
+      <span>WordPress</span><span class="dot">•</span>
+      <span>Shopify</span><span class="dot">•</span>
+      <span>Landing Pages</span><span class="dot">•</span>
+      <span>Web Maintenance</span><span class="dot">•</span>
+      <span>Web Design</span><span class="dot">•</span>
+      <span>Web Development</span><span class="dot">•</span>
+      <span>E-Commerce</span><span class="dot">•</span>
+      <span>SEO Optimization</span><span class="dot">•</span>
+      <span>UI/UX Design</span><span class="dot">•</span>
+      <span>WordPress</span><span class="dot">•</span>
+      <span>Shopify</span><span class="dot">•</span>
+      <span>Landing Pages</span><span class="dot">•</span>
+      <span>Web Maintenance</span><span class="dot">•</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">What We Do</div>
+        <h2>Full-stack digital services<br />for growing businesses</h2>
+        <p>We handle everything from concept to launch — and beyond.</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M16 44h16M24 36v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M14 20l5 5-5 5M22 30h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Custom websites built from the ground up with clean code, fast performance, and mobile-first design.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="36" height="36" rx="18" stroke="currentColor" stroke-width="2.5"/><path d="M24 15v9l6 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, intuitive interfaces that guide users effortlessly toward conversion and engagement.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 36V28a16 16 0 0132 0v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><rect x="4" y="32" width="10" height="8" rx="2" stroke="currentColor" stroke-width="2.5"/><rect x="34" y="32" width="10" height="8" rx="2" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="12" r="6" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h3>E-Commerce</h3>
+          <p>Shopify, WooCommerce, and custom stores built to sell — with seamless checkout and product management.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><path d="M24 6C24 6 18 16 18 24s6 18 6 18M24 6c0 0 6 10 6 18s-6 18-6 18M6 24h36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>SEO Optimization</h3>
+          <p>Technical and on-page SEO to help your site rank higher and attract the right visitors organically.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M16 24h16M16 32h10M20 16h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Landing Pages</h3>
+          <p>High-converting landing pages for campaigns, product launches, and lead generation — built fast.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4l4 8 9 1.3-6.5 6.4 1.5 9L24 24l-8 4.7 1.5-9L11 13.3 20 12z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M14 34l-8 8M34 34l8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Web Maintenance</h3>
+          <p>Ongoing updates, security monitoring, and performance tuning so your site stays fast and secure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE CHART -->
+  <section class="section coverage" id="coverage">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">Full Coverage</div>
+        <h2>Everything your website needs,<br />handled by one expert.</h2>
+        <p>No juggling multiple vendors. Every phase of your project is covered — strategy to launch.</p>
+      </div>
+      <div class="coverage__layout">
+        <div class="coverage__chart">
+          <div class="cov-pool">
+            <div class="cov-pool__label">Your Project</div>
+            <div class="cov-pool__sub">All services included</div>
+          </div>
+          <div class="cov-bars">
+            <div class="cov-bar" data-pct="40">
+              <div class="cov-bar__meta">
+                <span class="cov-bar__name">
+                  <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M6 16h6M9 13v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M5 7l2.5 2.5L5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Development
+                </span>
+                <span class="cov-bar__pct">40%</span>
+              </div>
+              <div class="cov-bar__track">
+                <div class="cov-bar__fill" style="--pct:40%"></div>
+              </div>
+              <p class="cov-bar__desc">Clean, fast, mobile-first code built to perform and scale.</p>
+            </div>
+            <div class="cov-bar" data-pct="25">
+              <div class="cov-bar__meta">
+                <span class="cov-bar__name">
+                  <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="1.4"/><path d="M6 9h6M9 6v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                  UI/UX Design
+                </span>
+                <span class="cov-bar__pct">25%</span>
+              </div>
+              <div class="cov-bar__track">
+                <div class="cov-bar__fill" style="--pct:25%"></div>
+              </div>
+              <p class="cov-bar__desc">Wireframes, visual design, and brand-aligned layouts that convert.</p>
+            </div>
+            <div class="cov-bar" data-pct="15">
+              <div class="cov-bar__meta">
+                <span class="cov-bar__name">
+                  <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M9 2s-3 3.5-3 7 3 7 3 7M9 2s3 3.5 3 7-3 7-3 7M2 9h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                  SEO & Performance
+                </span>
+                <span class="cov-bar__pct">15%</span>
+              </div>
+              <div class="cov-bar__track">
+                <div class="cov-bar__fill" style="--pct:15%"></div>
+              </div>
+              <p class="cov-bar__desc">Technical SEO, Core Web Vitals, and speed optimization built in from day one.</p>
+            </div>
+            <div class="cov-bar" data-pct="12">
+              <div class="cov-bar__meta">
+                <span class="cov-bar__name">
+                  <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 2l1.8 3.6L15 6.3l-3 2.9.7 4.1L9 11.4 5.3 13.3 6 9.2 3 6.3l4.2-.7z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                  Strategy & Discovery
+                </span>
+                <span class="cov-bar__pct">12%</span>
+              </div>
+              <div class="cov-bar__track">
+                <div class="cov-bar__fill" style="--pct:12%"></div>
+              </div>
+              <p class="cov-bar__desc">Goal-setting, audience research, and competitive analysis before a single pixel is designed.</p>
+            </div>
+            <div class="cov-bar" data-pct="8">
+              <div class="cov-bar__meta">
+                <span class="cov-bar__name">
+                  <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l4 4 8-8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="3" r="2" stroke="currentColor" stroke-width="1.4"/></svg>
+                  Testing & Launch
+                </span>
+                <span class="cov-bar__pct">8%</span>
+              </div>
+              <div class="cov-bar__track">
+                <div class="cov-bar__fill" style="--pct:8%"></div>
+              </div>
+              <p class="cov-bar__desc">Cross-browser testing, final QA, smooth deployment, and a guided handoff.</p>
+            </div>
+          </div>
+        </div>
+        <div class="coverage__callouts">
+          <div class="cov-callout">
+            <div class="cov-callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>One point of contact</strong>
+              <p>You deal with the same person from kickoff to launch — no handoffs, no confusion.</p>
+            </div>
+          </div>
+          <div class="cov-callout">
+            <div class="cov-callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.75"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <strong>Transparent pricing</strong>
+              <p>Fixed quotes upfront. No surprise invoices, no hourly billing ambiguity.</p>
+            </div>
+          </div>
+          <div class="cov-callout">
+            <div class="cov-callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.75"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <strong>Fully remote, worldwide</strong>
+              <p>Work with clients across any timezone — async-friendly and always responsive.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section__header section__header--light">
+        <div class="section__tag section__tag--light">How We Work</div>
+        <h2>A clear process,<br />every time.</h2>
+        <p>No surprises — just a smooth, collaborative journey from idea to launch.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process-step">
+          <div class="process-step__num">01</div>
+          <div class="process-step__content">
+            <h3>Discovery</h3>
+            <p>We start by understanding your goals, audience, and competition to build a solid strategy.</p>
+          </div>
+        </div>
+        <div class="process-step__connector"></div>
+        <div class="process-step">
+          <div class="process-step__num">02</div>
+          <div class="process-step__content">
+            <h3>Design</h3>
+            <p>Wireframes and visual mockups crafted to match your brand and delight your users.</p>
+          </div>
+        </div>
+        <div class="process-step__connector"></div>
+        <div class="process-step">
+          <div class="process-step__num">03</div>
+          <div class="process-step__content">
+            <h3>Development</h3>
+            <p>Clean, scalable code built with modern technologies — fast, secure, and future-proof.</p>
+          </div>
+        </div>
+        <div class="process-step__connector"></div>
+        <div class="process-step">
+          <div class="process-step__num">04</div>
+          <div class="process-step__content">
+            <h3>Launch</h3>
+            <p>Thorough testing, optimized deployment, and a smooth handoff with training and support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / WHY US -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__visual">
+        <div class="about__card about__card--main">
+          <div class="about__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <strong>We move fast.</strong>
+          <span>Most projects launch in 2–4 weeks.</span>
+        </div>
+        <div class="about__card about__card--secondary">
+          <div class="about__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <strong>Always reachable.</strong>
+          <span>Direct communication — no middlemen.</span>
+        </div>
+        <div class="about__card about__card--tertiary">
+          <div class="about__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.75"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.75"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          </div>
+          <strong>Results-driven.</strong>
+          <span>We build for conversions, not just looks.</span>
+        </div>
+      </div>
+      <div class="about__content">
+        <div class="section__tag">Why Gaby Digital</div>
+        <h2>Small studio.<br />Big results.</h2>
+        <p>Gaby Digital is an independent web development studio built on one principle: <strong>your website should work as hard as you do.</strong></p>
+        <p>You get direct access to the developer on every project — no account managers, no offshore handoffs. Just clear communication, quality code, and websites that actually drive business.</p>
+        <ul class="about__list">
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" stroke="#F68220" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F68220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Fixed-price quotes — no surprise invoices
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" stroke="#F68220" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F68220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Mobile-first, SEO-ready from day one
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" stroke="#F68220" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F68220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Ongoing support and maintenance available
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9" stroke="#F68220" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F68220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            You own everything — full code &amp; asset transfer
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <div>
+        <h2>Ready to build something great?</h2>
+        <p>Let's talk about your project — no pressure, no commitment.</p>
+      </div>
+      <a href="#contact" class="btn btn--white">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <div class="section__tag">Get In Touch</div>
+        <h2>Let's start your project.</h2>
+        <p>Fill out the form and I'll get back to you within 24 hours with a plan and a quote.</p>
+        <div class="contact__details">
+          <a href="tel:5743705197" class="contact-detail">
+            <div class="contact-detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <span>Phone</span>
+              <strong>(574) 370-5197</strong>
+            </div>
+          </a>
+          <a href="mailto:jrgaby35@gmail.com" class="contact-detail">
+            <div class="contact-detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <span>Email</span>
+              <strong>jrgaby35@gmail.com</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select a service...</option>
+            <option>Web Development</option>
+            <option>E-Commerce Store</option>
+            <option>UI/UX Design</option>
+            <option>Landing Page</option>
+            <option>SEO Optimization</option>
+            <option>Web Maintenance</option>
+            <option>Other / Not Sure Yet</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="budget">Project Budget</label>
+          <select id="budget" name="budget">
+            <option value="" disabled selected>Select a range...</option>
+            <option>Under $500</option>
+            <option>$500 – $1,500</option>
+            <option>$1,500 – $5,000</option>
+            <option>$5,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="message">Tell Me About Your Project</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you looking to build? Any details about your business, goals, or timeline are helpful..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+        <p class="form__note">I respond within 24 hours, usually much faster.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="logo-gaby">Gaby</span><span class="logo-digital">Digital</span>
+        </a>
+        <p>Building high-performance websites<br />for ambitious businesses.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">Web Development</a>
+          <a href="#services">UI/UX Design</a>
+          <a href="#services">E-Commerce</a>
+          <a href="#services">SEO Optimization</a>
+          <a href="#services">Landing Pages</a>
+          <a href="#services">Web Maintenance</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#process">Our Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="tel:5743705197">(574) 370-5197</a>
+          <a href="mailto:jrgaby35@gmail.com">jrgaby35@gmail.com</a>
+          <a href="#contact" class="btn btn--primary btn--sm" style="margin-top:1rem">Start a Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Gaby Digital. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
