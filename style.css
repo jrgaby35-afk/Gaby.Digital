@@ -196,7 +196,7 @@ body {
   width: 30px;
   object-fit: contain;
   flex-shrink: 0;
-  margin-right: 8px;
+  margin: 0 6px;
   transform: translateY(-12px);
 }
 .logo-gaby   { color: var(--white); }
