@@ -86,37 +86,29 @@ const style = document.createElement('style');
 style.textContent = `.animate-in { opacity: 1 !important; transform: translateY(0) !important; }`;
 document.head.appendChild(style);
 
-// --- Contact form handler ---
+// --- Contact form validation (real submission handled by FormSubmit) ---
 const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const btn = form.querySelector('button[type="submit"]');
   const name    = form.querySelector('#name').value.trim();
   const email   = form.querySelector('#email').value.trim();
   const message = form.querySelector('#message').value.trim();
 
-  // Simple validation
   if (!name || !email || !message) {
+    e.preventDefault();
     showFormMessage('Please fill in your name, email, and project details.', 'error');
     return;
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    e.preventDefault();
     showFormMessage('Please enter a valid email address.', 'error');
     return;
   }
 
-  // Simulate send (replace with actual backend/FormSubmit/EmailJS)
+  // Valid — let the form submit naturally to FormSubmit
+  const btn = form.querySelector('button[type="submit"]');
   btn.disabled = true;
   btn.textContent = 'Sending…';
-
-  setTimeout(() => {
-    btn.disabled = false;
-    btn.textContent = 'Send Message →';
-    form.reset();
-    showFormMessage('Message sent! I\'ll be in touch within 24 hours.', 'success');
-  }, 1400);
 });
 
 function showFormMessage(text, type) {
@@ -133,10 +125,7 @@ function showFormMessage(text, type) {
     font-size: 14px;
     font-weight: 500;
     text-align: center;
-    ${type === 'success'
-      ? 'background:#ecfdf5; color:#065f46; border: 1px solid #a7f3d0;'
-      : 'background:#fef2f2; color:#991b1b; border: 1px solid #fecaca;'
-    }
+    background:#3a1a0a; color:#F68220; border: 1px solid rgba(246,130,32,.3);
   `;
   form.appendChild(msg);
   setTimeout(() => msg.remove(), 6000);
