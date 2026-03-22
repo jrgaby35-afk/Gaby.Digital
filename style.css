@@ -189,7 +189,7 @@ body {
   font-weight: 800;
   letter-spacing: -.5px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .logo-img {
   height: 30px;
@@ -197,6 +197,7 @@ body {
   object-fit: contain;
   flex-shrink: 0;
   margin-right: 8px;
+  transform: translateY(-4px);
 }
 .logo-gaby   { color: var(--white); }
 .logo-digital { color: var(--blue); }
